@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom"
-import { FolderIcon, BookOpenIcon, DiamondIcon, FileTextIcon, X } from "lucide-react"
+import { FolderIcon, BookOpenIcon, DiamondIcon, FileTextIcon, X, MessageSquare } from "lucide-react"
 
 interface SidebarProps {
   isOpen: boolean
@@ -14,6 +14,11 @@ const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
     { path: "/tutorials", name: "Tutorials", icon: BookOpenIcon },
     { path: "/premium", name: "Premium", icon: DiamondIcon },
     { path: "/cv-builder", name: "CV Builder", icon: FileTextIcon },
+    {
+      path: "/tosca",
+      name: "Tosca AI",
+      icon: MessageSquare
+    }
   ]
 
   return (

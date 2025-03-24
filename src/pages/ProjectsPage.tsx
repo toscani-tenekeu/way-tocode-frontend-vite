@@ -19,14 +19,17 @@ const ProjectsPage = () => {
           description: "A simple todo application built with React and TypeScript",
           isPremium: false,
           imageUrl: "/placeholder.svg?height=200&width=300",
+          price: 0,
+          features: []
         },
         {
           id: "2",
           title: "E-commerce Dashboard",
           description: "A comprehensive dashboard for managing online stores",
           isPremium: true,
-          price: 29.99,
+          price: 5000,
           imageUrl: "/placeholder.svg?height=200&width=300",
+          features: []
         },
         {
           id: "3",
@@ -34,18 +37,21 @@ const ProjectsPage = () => {
           description: "Real-time weather application with geolocation",
           isPremium: false,
           imageUrl: "/placeholder.svg?height=200&width=300",
+          price: 9500,
+          features: []
         },
         {
           id: "4",
           title: "Advanced Authentication System",
           description: "Complete authentication system with JWT, OAuth, and more",
           isPremium: true,
-          price: 39.99,
+          price: 3000,
           imageUrl: "/placeholder.svg?height=200&width=300",
+          features: []
         },
       ])
       setLoading(false)
-    }, 1000)
+    }, 3000)
   }, [])
 
   return (

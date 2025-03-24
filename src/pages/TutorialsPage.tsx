@@ -45,6 +45,46 @@ const TutorialsPage = () => {
           level: "Intermediate",
           imageUrl: "/placeholder.svg?height=200&width=300",
         },
+        {
+          id: "5",
+          title: "Next.js Full Stack Development",
+          description: "Build modern web applications with Next.js",
+          category: "Next.js",
+          level: "Advanced",
+          imageUrl: "/placeholder.svg?height=200&width=300",
+        },
+        {
+          id: "6",
+          title: "TailwindCSS Mastery",
+          description: "Create beautiful responsive designs with TailwindCSS",
+          category: "CSS",
+          level: "Intermediate",
+          imageUrl: "/placeholder.svg?height=200&width=300",
+        },
+        {
+          id: "7",
+          title: "MongoDB for JavaScript Developers",
+          description: "Learn database management with MongoDB",
+          category: "Database",
+          level: "Intermediate",
+          imageUrl: "/placeholder.svg?height=200&width=300",
+        },
+        {
+          id: "8",
+          title: "Docker for Web Developers",
+          description: "Containerize your web applications with Docker",
+          category: "DevOps",
+          level: "Advanced",
+          imageUrl: "/placeholder.svg?height=200&width=300",
+        },
+        {
+          id: "9",
+          title: "GraphQL API Development",
+          description: "Build efficient APIs with GraphQL",
+          category: "API",
+          level: "Advanced",
+          imageUrl: "/placeholder.svg?height=200&width=300",
+        }
       ])
       setLoading(false)
     }, 1000)

@@ -9,6 +9,7 @@ import FAQ from './pages/FAQ'
 import CookiePolicy from './pages/CookiePolicy'
 import Terms from './pages/Terms'
 import Privacy from './pages/Privacy'
+import ToscaPage from './pages/ToscaPage'
 import "./App.css"
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Route path="/cookie-policy" element={<CookiePolicy />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/privacy" element={<Privacy />} />
+          <Route path="/tosca" element={<ToscaPage />} />
         </Routes>
       </Layout>
     </Router>

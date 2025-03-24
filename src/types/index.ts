@@ -3,8 +3,9 @@ export interface Project {
   id: string
   title: string
   description: string
+  price: number
+  features: string[]
   isPremium: boolean
-  price?: number
   imageUrl: string
 }
 

@@ -1,11 +1,13 @@
 import type { Project } from "../../types"
-import { ArrowRight, Lock } from "lucide-react"
+import { ArrowRight, Lock, Download } from "lucide-react"
+import { formatPrice } from '../../utils/format'
+import Button from "../common/Button"
 
 interface ProjectCardProps {
   project: Project
 }
 
-const ProjectCard = ({ project }: ProjectCardProps) => {
+const ProjectCard = ({ project }: { project: Project }) => {
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:shadow-lg hover:-translate-y-1">
       <div className="relative">
@@ -19,19 +21,28 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
       </div>
 
       <div className="p-4">
-        <h3 className="text-lg font-bold mb-2">{project.title}</h3>
+        <h3 className="text-lg font-semibold mb-2">{project.title}</h3>
         <p className="text-gray-600 mb-4">{project.description}</p>
 
-        <div className="flex justify-between items-center">
-          <a href={`/projects/${project.id}`} className="text-blue-600 hover:text-blue-800 flex items-center">
-            View More
-            <ArrowRight className="w-4 h-4 ml-1" />
-          </a>
-
-          {project.isPremium && (
-            <button className="bg-green-500 hover:bg-green-600 text-white px-3 py-1 rounded-md text-sm font-medium">
-              Buy Now ${project.price}
-            </button>
+        <div className="space-y-4">
+          {project.isPremium ? (
+            <Button 
+              variant="primary" 
+              fullWidth
+              onClick={() => console.log(`Buy ${project.title}`)}
+            >
+              <span>Buy Now</span>
+              <ArrowRight className="w-4 h-4 ml-2" />
+            </Button>
+          ) : (
+            <Button 
+              variant="tertiary" 
+              fullWidth
+              onClick={() => console.log(`Download ${project.title}`)}
+            >
+              <span>Download for Free</span>
+              <Download className="w-4 h-4 ml-2" />
+            </Button>
           )}
         </div>
       </div>

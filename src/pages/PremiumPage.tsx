@@ -15,39 +15,61 @@ const PremiumPage = () => {
       setPremiumProjects([
         {
           id: "1",
-          title: "E-commerce Dashboard",
-          description: "A comprehensive dashboard for managing online stores",
-          isPremium: true,
-          price: 29.99,
-          imageUrl: "/placeholder.svg?height=200&width=300",
+          title: "E-commerce Platform",
+          description: "Complete e-commerce solution with payment integration",
+          price: 75000,
+          features: ["Admin Dashboard", "Payment Integration", "Inventory Management"],
+          imageUrl: "",
+          isPremium: true
         },
         {
           id: "2",
-          title: "Advanced Authentication System",
-          description: "Complete authentication system with JWT, OAuth, and more",
-          isPremium: true,
-          price: 39.99,
-          imageUrl: "/placeholder.svg?height=200&width=300",
+          title: "School Management System",
+          description: "Comprehensive school management solution",
+          price: 100000,
+          features: ["Student Portal", "Grade Management", "Attendance Tracking"],
+          imageUrl: "",
+          isPremium: true
         },
         {
           id: "3",
-          title: "Real-time Chat Application",
-          description: "Build a scalable chat app with WebSockets and React",
-          isPremium: true,
-          price: 49.99,
-          imageUrl: "/placeholder.svg?height=200&width=300",
+          title: "Real Estate Management",
+          description: "Property listing and management system",
+          price: 85000,
+          features: ["Property Listings", "Agent Portal", "Lead Management"],
+          imageUrl: "",
+          isPremium: true
         },
         {
           id: "4",
-          title: "AI-powered Content Generator",
-          description: "Create a content generator using OpenAI API and React",
-          isPremium: true,
-          price: 59.99,
-          imageUrl: "/placeholder.svg?height=200&width=300",
+          title: "Hospital Management System",
+          description: "Complete healthcare management solution",
+          price: 150000,
+          features: ["Patient Records", "Appointment System", "Billing Management"],
+          imageUrl: "",
+          isPremium: true
         },
+        {
+          id: "5",
+          title: "Restaurant Management",
+          description: "Full restaurant operations management system",
+          price: 65000,
+          features: ["Order Management", "Kitchen Display", "Inventory Control"],
+          imageUrl: "",
+          isPremium: true
+        },
+        {
+          id: "6",
+          title: "HR Management System",
+          description: "Employee and HR process management",
+          price: 90000,
+          features: ["Employee Portal", "Leave Management", "Payroll System"],
+          imageUrl: "",
+          isPremium: true
+        }
       ])
       setLoading(false)
-    }, 1000)
+    }, 3000)
   }, [])
 
   return (
