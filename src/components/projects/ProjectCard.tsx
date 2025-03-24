@@ -1,11 +1,7 @@
 import type { Project } from "../../types"
 import { ArrowRight, Lock, Download } from "lucide-react"
-import { formatPrice } from '../../utils/format'
 import Button from "../common/Button"
 
-interface ProjectCardProps {
-  project: Project
-}
 
 const ProjectCard = ({ project }: { project: Project }) => {
   return (
